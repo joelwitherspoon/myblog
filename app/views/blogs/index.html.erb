@@ -1,0 +1,13 @@
+<h1>Blog posts</h1>
+
+<% @blogs.each do |blog| %>
+	<h2>
+		<%= link_to blog.title, blog %>
+	</h2>
+	<p>
+		<%= blog.body %>
+	</p>
+<% end %>
+	<p><%= link_to "New Blog Post", new_blog_path %>
+		<h1> HELLO! </h1>
+	</p>
